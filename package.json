@@ -1,8 +1,7 @@
 {
   "name": "fastest-validator-lint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist/",
     "build": "tsc",
@@ -11,8 +10,15 @@
     "test": "jest",
     "prepublish": "npm run test && npm run build && npm version patch "
   },
+  "files": [
+    "dist"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yantrab/fastest-validator-decorators.git"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
